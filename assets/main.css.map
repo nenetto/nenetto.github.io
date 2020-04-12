@@ -3,10 +3,10 @@
 	"file": "main.css",
 	"sources": [
 		"main.scss",
-		"_sass/minima.scss",
-		"_sass/minima/_base.scss",
-		"_sass/minima/_layout.scss",
-		"_sass/minima/_syntax-highlighting.scss"
+		"private-nenetto.github.io/_sass/minima.scss",
+		"private-nenetto.github.io/_sass/minima/_base.scss",
+		"private-nenetto.github.io/_sass/minima/_layout.scss",
+		"private-nenetto.github.io/_sass/minima/_syntax-highlighting.scss"
 	],
 	"sourcesContent": [
 		"@import \"minima\";\n",
