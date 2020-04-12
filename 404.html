@@ -19,28 +19,18 @@
 <meta property="og:url" content="https://www.nenetto.page/404.html" />
 <meta property="og:site_name" content="Eugenio Marinetto" />
 <script type="application/ld+json">
-{"headline":"Eugenio Marinetto","description":"Personal Website of Eugenio Marinetto. This is the root for other contents of my own such as the tech blog, poetry and portfolio.","url":"https://www.nenetto.page/404.html","@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"Personal Website of Eugenio Marinetto. This is the root for other contents of my own such as the tech blog, poetry and portfolio.","url":"https://www.nenetto.page/404.html","@type":"WebPage","headline":"Eugenio Marinetto","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <meta property="og:image" content="../assets/img/ogpicture.png">
 
-  <!-- Seo Feed Generator by Jekyll https://github.com/jekyll/jekyll-feed --><link type="application/atom+xml" rel="alternate" href="https://www.nenetto.page/feed.xml" title="Eugenio Marinetto" /><!-- Google Analytics by Jekyll https://github.com/jekyll/jekyll-feed --><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163444871-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-163444871-1');
-</script><!-- Google Fonts -->
+  <!-- Seo Feed Generator by Jekyll https://github.com/jekyll/jekyll-feed --><link type="application/atom+xml" rel="alternate" href="https://www.nenetto.page/feed.xml" title="Eugenio Marinetto" /><!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
 <!--  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!--  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">-->
-  <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
-<!--  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">-->
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
@@ -161,6 +151,82 @@
 
 <!-- Template Main JS File -->
 <script src="../assets/js/main.js"></script>
+
+<!-- Cookie consent & Google Analytics --><!-- Only add all this in production, why would I analyse myself when writing the post anyway. -->
+
+
+<!-- Add cookie consent css & js -->
+<link rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
+        data-cfasync="false"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163444871-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163444871-1');
+</script>
+
+<script>
+    // Reads the value of a cookie by name or returns empty string
+    function getCookie(name) {
+        var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
+        return b ? b.pop() : '';
+    }
+
+    // Actually starting analytics up
+    function addAnalytics() {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXX-X');
+    }
+
+    // Waiting for the load event
+    window.addEventListener("load", function () {
+        // Reading "cookieconsent_status" cookie
+        const cookieConsent = getCookie('cookieconsent_status');
+
+        // Start analytics if user consented or did not deny
+        if (cookieConsent === 'allow' || cookieConsent === '') {
+            addAnalytics();
+        }
+
+        // Initialise cookie consent banner
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#efefef",
+                    "text": "#404040"
+                },
+                "button": {
+                    "background": "#8ec760",
+                    "text": "#ffffff"
+                }
+            },
+            "type": "opt-out",
+            "content": {
+                "allow": "Approve",
+                "dismiss": "Approve",
+                "deny": "Reject"
+            },
+            // Reload the page on user choice to make sure cookie is set
+            onStatusChange: function (status, chosenBefore) {
+                location.reload();
+            }
+        })
+    });
+</script>
+
 <!-- ======= END Body End ======= -->
 
 <!-- ======= END Footer ======= -->
